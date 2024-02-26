@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+section {
+  margin: 4em 1em;
+}
+.color-sample {
+  width: 100px;
+  height: 100px;
+  background: #ccc;
+  display: inline-block;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 18px;
+}
+p {
+  margin-bottom: 1em;
+}
+.copy {
+  margin-bottom: 0;
+  column-count: 2;
+}
+.meta {
+  color: #aaa;
+}
+
+main {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+}
+
+@media screen and (max-width: 1010px) {
+  main {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .copy {
+    column-count: 1;
+  }
+}
